@@ -1,10 +1,11 @@
---index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
 torchvision
 
+# Sisa library Anda
 Flask>=3.0.0
 ultralytics>=8.0.0
 Pillow>=10.0.0
 fpdf2>=2.7.0
 gunicorn>=21.0.0
-requests>=2.30.0 
+requests>=2.30.0

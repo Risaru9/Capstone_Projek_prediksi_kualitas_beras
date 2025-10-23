@@ -1,0 +1,4 @@
+# Beri tahu Nixpacks untuk menambahkan paket sistem
+[phases.setup]
+# Tambahkan 'pkgs.libglvnd' (penyedia libGL.so.1) dan 'pkgs.glib'
+pkgs = ["pkgs.libglvnd", "pkgs.glib"]

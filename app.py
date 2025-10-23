@@ -138,16 +138,17 @@ def download_report():
                  pdf.image(temp_image_path, x=10, w=pdf.w - 20)
 
         # Simpan PDF ke buffer
-        pdf_buffer = io.BytesIO(pdf.output(dest='S').encode('latin-1'))
-        pdf_buffer.seek(0)
+ # Simpan ke file sementara di /tmp
+            pdf_path = "/tmp/laporan_deteksi_beras.pdf"
+            pdf.output(pdf_path, 'F')
 
-        # Kirim file
-        return send_file(
-            pdf_buffer,
-            as_attachment=True,
-            download_name="laporan_deteksi_beras.pdf",
-            mimetype="application/pdf"
-        )
+            # Kirim file sebagai respons
+            return send_file(
+                pdf_path,
+                as_attachment=True,
+                download_name="laporan_deteksi_beras.pdf",
+                mimetype="application/pdf"
+            )
 
     except Exception as e:
         print(f"Error membuat PDF: {e}")

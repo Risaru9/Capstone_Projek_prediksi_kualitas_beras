@@ -13,8 +13,11 @@ COPY requirements.txt .
 # Install semua dependency Python
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN apt-get update && apt-get install -y fonts-dejavu-core
+
 # Copy semua file proyek ke container
 COPY . .
 
 # Jalankan aplikasi pakai Gunicorn
 CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8080"]
+

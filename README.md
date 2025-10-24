@@ -2,7 +2,7 @@
 
 Sebuah aplikasi web untuk menganalisis dan mendeteksi kualitas beras secara otomatis dari gambar menggunakan model *object detection* YOLOv8.
 
-![Tangkapan Layar Aplikasi RiceTech](Web.png)
+![Tangkapan Layar Aplikasi RiceTech](static/assets/Web.png)
 
 ---
 
@@ -43,3 +43,4 @@ Ikuti langkah-langkah ini untuk menjalankan proyek di komputer lokal Anda.
 ```bash
 git clone [https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git](https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git)
 cd Capstone_Projek_prediksi_kualitas_beras
+

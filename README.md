@@ -50,13 +50,75 @@ Berdasarkan hasil deteksi, aplikasi akan menghitung rasio, memberikan penilaian 
 
 ---
 
-## 🚀 Instalasi & Menjalankan Lokal
+## 🔧 Tutorial Menjalankan Proyek di Lokal
 
-Ikuti langkah-langkah ini untuk menjalankan proyek di komputer lokal Anda.
+Berikut adalah langkah-langkah detail untuk meng-install dan menjalankan proyek ini di komputer Anda.
 
-**1. Clone Repositori:**
+### 1. Prasyarat (Prerequisites)
+
+Pastikan Anda sudah meng-install perangkat lunak berikut:
+* **Git:** Untuk mengunduh repositori.
+* **Python (3.9+):** Untuk menjalankan aplikasi.
+
+### 2. Langkah-langkah Instalasi
+
+**Langkah 1: Clone Repositori**
+Buka terminal Anda dan jalankan perintah `git clone` untuk menyalin file proyek ke komputer Anda.
 ```bash
 git clone [https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git](https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git)
+
+Langkah 3: Masuk ke Direktori Proyek Pindah ke folder proyek yang baru saja Anda clone.
+Bash
+
 cd Capstone_Projek_prediksi_kualitas_beras
+
+Langkah 4: Buat Virtual Environment Sangat disarankan untuk menggunakan virtual environment (venv) agar library yang Anda install tidak bercampur dengan proyek lain.
+Bash
+
+python3 -m venv venv
+
+(Gunakan python jika python3 tidak ditemukan)
+
+Langkah 5: Aktifkan Virtual Environment Perintahnya berbeda tergantung sistem operasi Anda.
+
+    Untuk Windows (Command Prompt/PowerShell):
+    Bash
+
+.\venv\Scripts\activate
+
+Untuk macOS/Linux (Bash/Zsh):
+Bash
+
+    source venv/bin/activate
+
+Setelah berhasil, Anda akan melihat (venv) di awal baris terminal Anda.
+
+Langkah 6: Install Semua Library yang Dibutuhkan Install semua library yang terdaftar di requirements.txt menggunakan pip.
+Bash
+
+pip install -r requirements.txt
+
+Langkah 7: Dapatkan File Model (best.pt) File ini tidak ada di GitHub karena ukurannya besar (sesuai .gitignore). Anda harus mengunduh file best.pt secara manual dari sumber lain (misal: Google Drive, dll.).
+
+Letakkan file best.pt di dalam folder utama proyek (sejajar dengan file app.py).
+
+3. Menjalankan Aplikasi
+
+Setelah semua langkah instalasi selesai, jalankan aplikasi menggunakan perintah berikut:
+Bash
+
+flask run
+
+Atau, jika perintah di atas tidak berhasil:
+Bash
+
+python app.py
+
+Terminal akan menampilkan output yang memberitahu Anda bahwa server sedang berjalan, biasanya di alamat: * Running on http://127.0.0.1:5000
+
+4. Buka Aplikasi di Browser
+
+Buka browser web Anda (seperti Chrome atau Firefox) dan masukkan alamat http://127.0.0.1:5000. Sekarang Anda dapat menggunakan aplikasi RiceTech secara lokal!
+
 
 

@@ -23,6 +23,21 @@ Berdasarkan hasil deteksi, aplikasi akan menghitung rasio, memberikan penilaian 
 
 ---
 
+## 🚀 Cara Penggunaan
+
+1.  Buka aplikasi web di browser Anda.
+2.  *Scroll* ke bagian **"Unggah Foto Beras"**.
+3.  Klik tombol **"Pilih File"** dan pilih gambar beras yang ingin Anda analisis.
+4.  Tekan tombol **"Deteksi Sekarang"**. Aplikasi akan memproses gambar.
+5.  Lihat hasilnya di bagian **"Hasil Deteksi"**. Anda akan melihat:
+    * Gambar asli dengan kotak-kotak deteksi.
+    * Diagram lingkaran (*pie chart*) distribusi kualitas.
+    * Penilaian akhir (misal: "Kualitas: C").
+    * Rincian jumlah objek yang terdeteksi.
+6.  Klik tombol **"Download PDF"** untuk menyimpan laporan analisis ke komputer Anda.
+
+---
+
 ## 💻 Teknologi yang Digunakan
 
 * **Machine Learning:** Ultralytics (YOLOv8)
@@ -43,4 +58,5 @@ Ikuti langkah-langkah ini untuk menjalankan proyek di komputer lokal Anda.
 ```bash
 git clone [https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git](https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git)
 cd Capstone_Projek_prediksi_kualitas_beras
+
 

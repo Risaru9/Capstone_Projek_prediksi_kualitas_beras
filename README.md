@@ -82,8 +82,8 @@ python3 -m venv venv
 
 Langkah 4: Aktifkan Virtual Environment Perintahnya berbeda tergantung sistem operasi Anda.
 
-    Untuk Windows (Command Prompt/PowerShell):
-    Bash
+Untuk Windows (Command Prompt/PowerShell):
+Bash
 
 .\venv\Scripts\activate
 
@@ -116,13 +116,10 @@ Bash
 
 python app.py
 
-Terminal akan menampilkan output yang memberitahu Anda bahwa server sedang berjalan, biasanya di alamat: * Running on http://127.0.0.1:5000
+Terminal akan menampilkan output yang memberitahu Anda bahwa server sedang berjalan,
+biasanya di alamat: * Running on http://127.0.0.1:5000
 
 Buka Aplikasi di Browser
 
 Buka browser web Anda (seperti Chrome atau Firefox) dan masukkan alamat http://127.0.0.1:5000.
 Sekarang Anda dapat menggunakan aplikasi RiceTech secara lokal!
-
-
-
-

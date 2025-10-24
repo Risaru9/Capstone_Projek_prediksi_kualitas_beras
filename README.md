@@ -72,7 +72,8 @@ Bash
 
 cd Capstone_Projek_prediksi_kualitas_beras
 
-Langkah 4: Buat Virtual Environment Sangat disarankan untuk menggunakan virtual environment (venv) agar library yang Anda install tidak bercampur dengan proyek lain.
+Langkah 4: Buat Virtual Environment Sangat disarankan untuk menggunakan virtual environment (venv)
+agar library yang Anda install tidak bercampur dengan proyek lain.
 Bash
 
 python3 -m venv venv
@@ -98,11 +99,12 @@ Bash
 
 pip install -r requirements.txt
 
-Langkah 7: Dapatkan File Model (best.pt) File ini tidak ada di GitHub karena ukurannya besar (sesuai .gitignore). Anda harus mengunduh file best.pt secara manual dari sumber lain (misal: Google Drive, dll.).
+Langkah 7: Dapatkan File Model (best.pt) File ini tidak ada di GitHub karena ukurannya besar (sesuai .gitignore).
+Anda harus mengunduh file best.pt secara manual dari sumber lain (misal: Google Drive, dll.).
 
 Letakkan file best.pt di dalam folder utama proyek (sejajar dengan file app.py).
 
-3. Menjalankan Aplikasi
+Menjalankan Aplikasi
 
 Setelah semua langkah instalasi selesai, jalankan aplikasi menggunakan perintah berikut:
 Bash
@@ -116,9 +118,11 @@ python app.py
 
 Terminal akan menampilkan output yang memberitahu Anda bahwa server sedang berjalan, biasanya di alamat: * Running on http://127.0.0.1:5000
 
-4. Buka Aplikasi di Browser
+Buka Aplikasi di Browser
 
-Buka browser web Anda (seperti Chrome atau Firefox) dan masukkan alamat http://127.0.0.1:5000. Sekarang Anda dapat menggunakan aplikasi RiceTech secara lokal!
+Buka browser web Anda (seperti Chrome atau Firefox) dan masukkan alamat http://127.0.0.1:5000.
+Sekarang Anda dapat menggunakan aplikasi RiceTech secara lokal!
+
 
 
 

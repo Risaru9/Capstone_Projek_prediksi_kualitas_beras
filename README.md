@@ -113,7 +113,10 @@ Setelah berjalan, terminal akan menampilkan pesan seperti:
 ```
 
 ### 4. Mengakses Web
-```
+
 Buka browser Anda dan kunjungi:
 ```
+http://127.0.0.1:5000
+```
+
 

@@ -50,76 +50,67 @@ Berdasarkan hasil deteksi, aplikasi akan menghitung rasio, memberikan penilaian 
 
 ---
 
-## 🔧 Tutorial Menjalankan Proyek di Lokal
+## Instalasi & Menjalankan Aplikasi
 
-Berikut adalah langkah-langkah detail untuk meng-install dan menjalankan proyek ini di komputer Anda.
+Panduan ini membantu Anda menyiapkan dan menjalankan proyek **Prediksi Kualitas Beras** di lingkungan lokal Anda.
 
-### 1. Prasyarat (Prerequisites)
+---
 
-Pastikan Anda sudah meng-install perangkat lunak berikut:
-* **Git:** Untuk mengunduh repositori.
-* **Python (3.9+):** Untuk menjalankan aplikasi.
+### 1. Prasyarat
 
-### 2. Langkah-langkah Instalasi
+Pastikan perangkat berikut sudah terpasang di sistem Anda:
 
-**Langkah 1: Clone Repositori**
-Buka terminal Anda dan jalankan perintah `git clone` untuk menyalin file proyek ke komputer Anda.
+- **Git** — untuk mengunduh repositori.
+- **Python 3.9+** — untuk menjalankan aplikasi.
+
+---
+
+### 2. Langkah Instalasi
+
+#### **Langkah 1: Clone Repositori**
+Salin proyek ke komputer Anda dengan perintah berikut:
 ```bash
-git clone [https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git](https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git)
+git clone https://github.com/Risaru9/Capstone_Projek_prediksi_kualitas_beras.git
+```
 
-Langkah 2: Masuk ke Direktori Proyek Pindah ke folder proyek yang baru saja Anda clone.
-Bash
-
+#### **Langkah 2: Masuk ke Direktori Proyek**
+```
 cd Capstone_Projek_prediksi_kualitas_beras
+```
 
-Langkah 3: Buat Virtual Environment Sangat disarankan untuk menggunakan virtual environment (venv)
-agar library yang Anda install tidak bercampur dengan proyek lain.
-Bash
-
+#### **Langkah 3: Buat Virtual Environment**
+```
 python3 -m venv venv
+```
 
-(Gunakan python jika python3 tidak ditemukan)
-
-Langkah 4: Aktifkan Virtual Environment Perintahnya berbeda tergantung sistem operasi Anda.
-
-Untuk Windows (Command Prompt/PowerShell):
-Bash
-
+#### **Langkah 4: Aktifkan Virtual Environment**
+```Windows
 .\venv\Scripts\activate
+```
+```Macos/Linux
+source venv/bin/activate
+```
 
-Untuk macOS/Linux (Bash/Zsh):
-Bash
-
-    source venv/bin/activate
-
-Setelah berhasil, Anda akan melihat (venv) di awal baris terminal Anda.
-
-Langkah 5: Install Semua Library yang Dibutuhkan Install semua library yang terdaftar di requirements.txt menggunakan pip.
-Bash
-
+#### **Langkah 5: Install Semua Dependensi**
+```
 pip install -r requirements.txt
+```
 
-Langkah 6: Dapatkan File Model (best.pt) File ini tidak ada di GitHub karena ukurannya besar (sesuai .gitignore).
-Anda harus mengunduh file best.pt secara manual dari sumber lain (misal: Google Drive, dll.).
-
-Letakkan file best.pt di dalam folder utama proyek (sejajar dengan file app.py).
-
-Menjalankan Aplikasi
-
-Setelah semua langkah instalasi selesai, jalankan aplikasi menggunakan perintah berikut:
-Bash
-
+### 3. Menjalankan Aplikasi
+Setelah semua langkah di atas selesai, jalankan aplikasi dengan salah satu perintah berikut:
+```
 flask run
-
-Atau, jika perintah di atas tidak berhasil:
-Bash
-
+```
+atau
+```
 python app.py
+```
+Setelah berjalan, terminal akan menampilkan pesan seperti:
+```
+* Running on http://127.0.0.1:5000
+```
 
-Terminal akan menampilkan output yang memberitahu Anda bahwa server sedang berjalan,
-biasanya di alamat: * Running on http://127.0.0.1:5000
-
-Buka Aplikasi di Browser
-
-Buka browser web Anda (seperti Chrome atau Firefox) dan masukkan alamat http://127.0.0.1:5000.
-Sekarang Anda dapat menggunakan aplikasi RiceTech secara lokal!
+### 4. Mengakses Web
+```
+Buka browser Anda dan kunjungi:
+```

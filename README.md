@@ -84,10 +84,12 @@ python3 -m venv venv
 ```
 
 #### **Langkah 4: Aktifkan Virtual Environment**
-```Windows
+Windows
+```
 .\venv\Scripts\activate
 ```
-```Macos/Linux
+Macos/Linux
+```
 source venv/bin/activate
 ```
 
@@ -114,3 +116,4 @@ Setelah berjalan, terminal akan menampilkan pesan seperti:
 ```
 Buka browser Anda dan kunjungi:
 ```
+
